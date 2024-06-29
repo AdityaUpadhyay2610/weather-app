@@ -26,7 +26,7 @@ toggleButton.addEventListener("click", () => {
 
 
 async function checkWeather(city){
-    const response = await fetch(apiUrl + city + `&appid=${apiKey}`);git 
+    const response = await fetch(apiUrl + city + `&appid=${apiKey}`);
 
     if(response.status == 404){
         document.querySelector(".error").style.display = "block";
